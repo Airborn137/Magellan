@@ -4,15 +4,22 @@
 //
 //  Created by Slava Ovchinnikov on 12.06.2025.
 //
-
 import SwiftUI
 
 struct ContentView: View {
+    @State private var hasStarted = false
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        if hasStarted {
+            MapView()
+        } else {
+            WelcomeView(hasStarted: $hasStarted)
+        }
     }
 }
 
-#Preview {
-    ContentView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }

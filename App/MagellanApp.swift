@@ -4,5 +4,13 @@
 //
 //  Created by Slava Ovchinnikov on 12.06.2025.
 //
+import SwiftUI
 
-import Foundation
+@main
+struct MagellanApp: App {
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+        }
+    }
+}

@@ -6,17 +6,25 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A01419932DFAB8F00020F243 /* MagellanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01419922DFAB8F00020F243 /* MagellanApp.swift */; };
+		A01419952DFABA4F0020F243 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01419942DFABA4F0020F243 /* ContentView.swift */; };
+		A01419972DFAC1560020F243 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A01419962DFAC1560020F243 /* MapView.swift */; };
+		A0B3DE842DFFDBFB0004CF02 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0B3DE832DFFDBFB0004CF02 /* WelcomeView.swift */; };
+		A0B52B632E0206DB00A082B7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A0B52B622E0206DB00A082B7 /* Assets.xcassets */; };
+		A0F853BC2E04906F00079E2E /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0F853BB2E04906F00079E2E /* LocationManager.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		A00FCAAB2DFA2AF300EFD46E /* Magellan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Magellan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A01419922DFAB8F00020F243 /* MagellanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagellanApp.swift; sourceTree = "<group>"; };
+		A01419942DFABA4F0020F243 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A01419962DFAC1560020F243 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		A0B3DE832DFFDBFB0004CF02 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
+		A0B52B622E0206DB00A082B7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A0F853BB2E04906F00079E2E /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		A0F853BD2E0491C300079E2E /* info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		A00FCAAD2DFA2AF300EFD46E /* Magellan */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Magellan;
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		A00FCAA82DFA2AF300EFD46E /* Frameworks */ = {
@@ -32,7 +40,14 @@
 		A00FCAA22DFA2AF300EFD46E = {
 			isa = PBXGroup;
 			children = (
-				A00FCAAD2DFA2AF300EFD46E /* Magellan */,
+				A0F853BD2E0491C300079E2E /* info.plist */,
+				A0F853BB2E04906F00079E2E /* LocationManager.swift */,
+				A03B39F92DFA9B7A00BB7C9F /* Extensions */,
+				A03B39F82DFA9ACA00BB7C9F /* Views */,
+				A03B39F72DFA9AB700BB7C9F /* Resources */,
+				A03B39F62DFA9AA100BB7C9F /* Models */,
+				A03B39F52DFA9A9400BB7C9F /* Managers */,
+				A03B39F32DFA9A4900BB7C9F /* App */,
 				A00FCAAC2DFA2AF300EFD46E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +58,53 @@
 				A00FCAAB2DFA2AF300EFD46E /* Magellan.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A03B39F32DFA9A4900BB7C9F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A01419922DFAB8F00020F243 /* MagellanApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A03B39F52DFA9A9400BB7C9F /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
+			sourceTree = "<group>";
+		};
+		A03B39F62DFA9AA100BB7C9F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A03B39F72DFA9AB700BB7C9F /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A0B52B622E0206DB00A082B7 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A03B39F82DFA9ACA00BB7C9F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A01419942DFABA4F0020F243 /* ContentView.swift */,
+				A01419962DFAC1560020F243 /* MapView.swift */,
+				A0B3DE832DFFDBFB0004CF02 /* WelcomeView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A03B39F92DFA9B7A00BB7C9F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -59,9 +121,6 @@
 			buildRules = (
 			);
 			dependencies = (
-			);
-			fileSystemSynchronizedGroups = (
-				A00FCAAD2DFA2AF300EFD46E /* Magellan */,
 			);
 			name = Magellan;
 			packageProductDependencies = (
@@ -82,6 +141,7 @@
 				TargetAttributes = {
 					A00FCAAA2DFA2AF300EFD46E = {
 						CreatedOnToolsVersion = 16.3;
+						LastSwiftMigration = 1630;
 					};
 				};
 			};
@@ -109,6 +169,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0B52B632E0206DB00A082B7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +180,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0B3DE842DFFDBFB0004CF02 /* WelcomeView.swift in Sources */,
+				A01419932DFAB8F00020F243 /* MagellanApp.swift in Sources */,
+				A0F853BC2E04906F00079E2E /* LocationManager.swift in Sources */,
+				A01419972DFAC1560020F243 /* MapView.swift in Sources */,
+				A01419952DFABA4F0020F243 /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,24 +317,28 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DB4B632AMM;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Slava.Magellan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Slava.Magellan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -279,22 +349,25 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = DB4B632AMM;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = Slava.Magellan;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Slava.Magellan;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

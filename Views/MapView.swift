@@ -6,13 +6,26 @@
 //
 
 import SwiftUI
+import MapKit
+import _MapKit_SwiftUI
 
 struct MapView: View {
+    @StateObject private var locationManager = LocationManager()
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        Group {
+            if locationManager.hasLocation {
+                Map(position: $locationManager.cameraPosition) {
+                    UserAnnotation()
+                }
+                .mapControls {
+                    MapUserLocationButton()
+                    MapCompass()
+                }
+            } else {
+                Text("Определяем местоположение...")
+            }
+        }
     }
 }
 
-#Preview {
-    MapView()
-}
